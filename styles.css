@@ -64,10 +64,6 @@
     line-height: 42px;
 }
 
-.portfolio-header .mdl-layout__drawer-button {
-    background-color: rgba(197, 197, 197, 0.44);
-}
-
 .portfolio-navigation-row .is-active {
     position: relative;
     font-weight: bold;
