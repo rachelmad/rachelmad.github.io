@@ -2,33 +2,44 @@
 layout: large_card
 ---
 
-<div>Work</div>
-{% for post in site.tags.work_experience %}
-<div class="mdl-cell mdl-cell--8-col mdl-card__supporting-text no-padding ">
-    <h2 class="mdl-card__title-text"> {{ post.title }}</h2>
-    <div> {{ post.company }} </div>
-    <div> {{ post.display_date }} </div>
-    <div> {{ post.tools }} </div>
-    <div class="portfolio-description">
-
-        {{ post.excerpt }}
-
+<div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--12-col">
+        <div class="experience_type">Work</div>
     </div>
-</div>
-{% endfor %}
+    {% for post in site.tags.work_experience %}
 
-<div>Education</div>
-{% for post in site.tags.education %}
-<div class="mdl-cell mdl-cell--8-col mdl-card__supporting-text no-padding ">
-    <h2 class="mdl-card__title-text"> {{ post.title }}</h2>
-    <div> {{ post.company }} </div>
-    <div> {{ post.display_date }} </div>
-    <div> {{ post.tools }} </div>
-    <div class="portfolio-description">
-
-        {{ post.excerpt }}
-
+    <div class="mdl-cell mdl-cell--4-col mdl-card__supporting-text ">
+        <div class="emphasize"> {{ post.company }}</div>
+        <div class="subtext"> {{ post.display_date }}</div>
     </div>
-</div>
-{% endfor %}
+    <div class="mdl-cell mdl-cell--8-col mdl-card__supporting-text ">
+        <div class="emphasize"> {{ post.title }}</div>
+        <div class="subtext"> {{ post.tools }}</div>
+        <div class="portfolio-description">
 
+            {{ post.excerpt }}
+
+        </div>
+    </div>
+    {% endfor %}
+
+    <div class="mdl-cell mdl-cell--12-col">
+        <div class="experience_type">Education</div>
+    </div>
+    {% for post in site.tags.education %}
+
+    <div class="mdl-cell mdl-cell--4-col mdl-card__supporting-text ">
+        <div class="emphasize"> {{ post.company }}</div>
+        <div class="subtext"> {{ post.display_date }}</div>
+    </div>
+    <div class="mdl-cell mdl-cell--8-col mdl-card__supporting-text ">
+        <div class="emphasize"> {{ post.title }}</div>
+        <div class="subtext"> {{ post.tools }}</div>
+        <div class="portfolio-description">
+
+            {{ post.excerpt }}
+
+        </div>
+    </div>
+    {% endfor %}
+</div>

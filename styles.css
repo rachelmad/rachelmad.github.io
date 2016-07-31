@@ -15,7 +15,7 @@
 .mdl-layout__title {
     font-size: 5rem;
     text-align: center;
-    font-weight: 300;
+    font-weight: bold;
     font-family: 'Stalemate', cursive;
 }
 
@@ -118,7 +118,7 @@ img.article-image {
 }
 
 .portfolio-copy {
-    max-width: 700px;
+    max-width: 90%;
     padding: 0px 25px;
 }
 
@@ -165,6 +165,23 @@ img.article-image {
 
 .portfolio-description {
     flex-grow: 1;
+}
+
+.experience_type {
+    font-family: 'Stalemate', cursive;
+    font-size: 3rem;
+    padding: 0px 15px;
+}
+
+.emphasize {
+    font-weight: bold;
+    padding: 3px 0px;
+}
+
+.subtext {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    padding: 3px 0px;
 }
 
 footer {
