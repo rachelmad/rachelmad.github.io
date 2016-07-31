@@ -163,6 +163,10 @@ img.article-image {
     margin: auto;
 }
 
+.portfolio-description {
+    flex-grow: 1;
+}
+
 footer {
     /*background-image: url(images/footer-background.png);*/
     background-size: cover;
