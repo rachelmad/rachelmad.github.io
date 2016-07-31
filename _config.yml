@@ -10,4 +10,4 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
-permalink: /portfolio/:year/:month/:day/:title
+permalink: /entries/:year/:month/:day/:title
