@@ -1,2 +1,2 @@
 # rachelmad.github.io
-My personal site
+A personal site built with Material Design Lite
