@@ -172,3 +172,7 @@ footer {
     background-size: cover;
 }
 
+.footer-logo {
+    font-family: 'Stalemate', cursive;
+    font-size: 2rem;
+}
