@@ -1,45 +1,53 @@
 ---
-layout: large_card
+layout: default
 ---
 
-<div class="mdl-grid">
-    <div class="mdl-cell mdl-cell--12-col">
-        <div class="experience_type">Work</div>
+<div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+    <div class="mdl-card__title">
+        <div class="card-title">Work</div>
     </div>
-    {% for post in site.tags.work_experience %}
+    <div class="mdl-grid mdl-card__supporting-text">
+        {% for post in site.tags.work_experience %}
 
-    <div class="mdl-cell mdl-cell--4-col mdl-card__supporting-text ">
-        <div class="emphasize"> {{ post.company }}</div>
-        <div class="subtext"> {{ post.display_date }}</div>
-    </div>
-    <div class="mdl-cell mdl-cell--8-col mdl-card__supporting-text ">
-        <div class="emphasize"> {{ post.title }}</div>
-        <div class="subtext"> {{ post.tools }}</div>
-        <div class="portfolio-description">
-
-            {{ post.excerpt }}
-
+        <div class="mdl-cell mdl-cell--4-col">
+            <div class="emphasize"> {{ post.company }}</div>
+            <div class="subtext"> {{ post.display_date }}</div>
         </div>
-    </div>
-    {% endfor %}
+        <div class="mdl-cell mdl-cell--8-col">
+            <div class="emphasize"> {{ post.title }}</div>
+            <div class="subtext"> {{ post.tools }}</div>
+            <div class="portfolio-description">
 
-    <div class="mdl-cell mdl-cell--12-col">
-        <div class="experience_type">Education</div>
-    </div>
-    {% for post in site.tags.education %}
+                {{ post.excerpt }}
 
-    <div class="mdl-cell mdl-cell--4-col mdl-card__supporting-text ">
-        <div class="emphasize"> {{ post.company }}</div>
-        <div class="subtext"> {{ post.display_date }}</div>
-    </div>
-    <div class="mdl-cell mdl-cell--8-col mdl-card__supporting-text ">
-        <div class="emphasize"> {{ post.title }}</div>
-        <div class="subtext"> {{ post.tools }}</div>
-        <div class="portfolio-description">
-
-            {{ post.excerpt }}
-
+            </div>
         </div>
+        {% endfor %}
     </div>
-    {% endfor %}
+</div>
+
+
+<div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+    <div class="mdl-card__title">
+        <div class="card-title">Education</div>
+    </div>
+    <div class="mdl-grid mdl-card__supporting-text">
+        {% for post in site.tags.education %}
+
+        <div class="mdl-cell mdl-cell--4-col">
+            <div class="emphasize"> {{ post.company }}</div>
+            <div class="subtext"> {{ post.display_date }}</div>
+        </div>
+        <div class="mdl-cell mdl-cell--8-col">
+            <div class="emphasize"> {{ post.title }}</div>
+            <div class="subtext"> {{ post.tools }}</div>
+            <div class="portfolio-description">
+
+                {{ post.excerpt }}
+
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
 </div>

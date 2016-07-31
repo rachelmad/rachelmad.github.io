@@ -167,10 +167,14 @@ img.article-image {
     flex-grow: 1;
 }
 
-.experience_type {
+.mdl-card__title {
+    background-color: #ffc0cb;
+}
+
+.card-title {
     font-family: 'Stalemate', cursive;
     font-size: 3rem;
-    padding: 0px 15px;
+    margin: 0px 0px -10px 15px;
 }
 
 .emphasize {
