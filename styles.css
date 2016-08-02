@@ -19,6 +19,12 @@
     font-family: 'Stalemate', cursive;
 }
 
+.mdl-card__supporting-text {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
 .is-compact .mdl-layout__title span {
     display: none;
 }
@@ -168,13 +174,17 @@ img.article-image {
 }
 
 .mdl-card__title {
-    background-color: #ffc0cb;
+    background-color: #ffd9df;
 }
 
 .card-title {
     font-family: 'Stalemate', cursive;
     font-size: 3rem;
     margin: 0px 0px -10px 15px;
+}
+
+.small-card-title {
+    padding: 5px 0 0 0;
 }
 
 .emphasize {
@@ -186,6 +196,7 @@ img.article-image {
     font-size: 0.8rem;
     text-transform: uppercase;
     padding: 3px 0px;
+    opacity: 0.7;
 }
 
 footer {

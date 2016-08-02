@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+{% for post in site.categories.projects %}
+<div class="mdl-cell mdl-card mdl-shadow--4dp">
+    <!--<div class="mdl-card__media">-->
+        <!--<img class="article-image" src=" images/example-work01.jpg" border="0" alt="">-->
+    <!--</div>-->
+    <div class="mdl-card__title small-card-title">
+        <div class="card-title"> {{ post.title }} </div>
+    </div>
+    <div class="mdl-card__supporting-text">
+        <div class="subtext"> {{ post.tools }}</div>
+        <div class="portfolio-description">
+
+            {{ post.excerpt }}
+
+        </div>
+        <div class="subtext">
+            {{ post.company }}: {{ post.display_date }}
+        </div>
+    </div>
+    <div class="mdl-card__actions mdl-card--border">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect" >Github</a>
+    </div>
+</div>
+{% endfor %}
