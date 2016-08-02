@@ -10,6 +10,7 @@ layout: default
     <div class="mdl-card__title small-card-title">
         <div class="card-title"> {{ post.title }} </div>
     </div>
+
     <div class="mdl-card__supporting-text flex-column">
         <div class="subtext"> {{ post.tools }}</div>
         <div class="portfolio-description">
@@ -21,8 +22,17 @@ layout: default
             {{ post.company }}: {{ post.display_date }}
         </div>
     </div>
-    <div class="mdl-card__actions mdl-card--border">
-        <a class="mdl-button mdl-js-button mdl-js-ripple-effect" >Github</a>
-    </div>
+
+    {% if post.link %}
+        <div class="mdl-card__actions mdl-card--border center-text">
+            <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href={{ post.link }}>
+                {% if post.link_name == "Github" %}
+                    <i class="fa fa-github icon-button" aria-hidden="true"></i>
+                {% else %}
+                    {{ post.link_name }}
+                {% endif %}
+            </a>
+        </div>
+    {% endif %}
 </div>
 {% endfor %}
