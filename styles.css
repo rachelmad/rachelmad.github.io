@@ -19,9 +19,12 @@
     font-family: 'Stalemate', cursive;
 }
 
+.flex-column {
+    flex-direction: column;
+}
+
 .mdl-card__supporting-text {
     display: flex;
-    flex-direction: column;
     flex-grow: 1;
 }
 
