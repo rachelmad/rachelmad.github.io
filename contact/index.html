@@ -3,10 +3,10 @@ layout: large_card
 card_title: Talk to Me
 ---
 
-<div class="mdl-cell mdl-cell--8-col mdl-card">
+<div class="mdl-cell mdl-cell--8-col mdl-cell--2-offset mdl-card portfolio-contact">
     <form action="//formspree.io/rachelvmadrigal@gmail.com" method="POST">
-        <input type="hidden" name="_format" value="plain" />
-        <input type="text" name="_gotcha" style="display:none" />
+        <input type="hidden" name="_format" value="plain"/>
+        <input type="text" name="_gotcha" style="display:none"/>
 
         <div class="mdl-textfield mdl-js-textfield">
             <input class="mdl-textfield__input" type="name" name="name" id="name-field">
@@ -19,13 +19,15 @@ card_title: Talk to Me
         </div>
 
         <div class="mdl-textfield mdl-js-textfield">
-            <textarea class="mdl-textfield__input" type="text" rows= "5" id="body-field" name="body"></textarea>
+            <textarea class="mdl-textfield__input" type="text" rows="5" id="body-field" name="body"></textarea>
             <label class="mdl-textfield__label" for="body-field">Text lines...</label>
         </div>
-            <!--<input type="hidden" name="_next" value="//site.io/thanks.html" />-->
+        <!--<input type="hidden" name="_next" value="//site.io/thanks.html" />-->
 
-            <input type="submit" value="Send">
+        <div>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect float-right" type="submit" value="Send">
+                Send
+            </button>
         </div>
-
     </form>
 </div>

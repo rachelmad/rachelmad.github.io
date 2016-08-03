@@ -210,6 +210,10 @@ img.article-image {
     font-size: 2rem;
 }
 
+.float-right {
+    float: right;
+}
+
 footer {
     /*background-image: url(images/footer-background.png);*/
     background-size: cover;
