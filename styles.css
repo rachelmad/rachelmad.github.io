@@ -9,7 +9,7 @@
     padding: 0;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .mdl-layout__header .mdl-layout__drawer-button {
@@ -22,6 +22,7 @@
     text-align: center;
     font-weight: bold;
     font-family: 'Stalemate', cursive;
+    line-height: 35px;
 }
 
 .flex-column {
@@ -38,7 +39,7 @@
 }
 
 .portfolio-logo-row {
-    min-height: 200px;
+    min-height: 100px;
     background-color: rgb(230, 230, 230);
 }
 
@@ -240,8 +241,10 @@ footer {
 }
 
 .mdl-mini-footer {
-    padding: 15px 15px 3px 15px;
+    padding: 15px;
     line-height: 0px;
+    min-height: 25px;
+    max-height: 25px;
 }
 
 .mdl-mini-footer__right-section {
