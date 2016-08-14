@@ -239,6 +239,22 @@ footer {
     font-size: 2rem;
 }
 
+.mdl-mini-footer {
+    padding: 15px 15px 3px 15px;
+    line-height: 0px;
+}
+
+.mdl-mini-footer__right-section {
+    color: white;
+    font-family: 'Stalemate', cursive;
+    font-size: 2rem;
+    line-height: 35px;
+}
+
 main {
-    background-color: rgb(230, 230, 230);
+    background-color: #C1C1C1;
+}
+
+a {
+    text-decoration: none;
 }
