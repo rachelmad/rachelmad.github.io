@@ -12,6 +12,11 @@
     justify-content: center;
 }
 
+.mdl-layout__header .mdl-layout__drawer-button {
+    background-color: transparent;
+    padding: 15px 0px;
+}
+
 .mdl-layout__title {
     font-size: 5rem;
     text-align: center;
@@ -34,6 +39,7 @@
 
 .portfolio-logo-row {
     min-height: 200px;
+    background-color: rgb(230, 230, 230);
 }
 
 .is-compact .portfolio-logo-row {
@@ -55,7 +61,8 @@
 }
 
 .portfolio-navigation-row {
-    background-color: rgba(0, 0, 0, 0.08);
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
     text-transform: uppercase;
     height: 45px;
 }
@@ -174,10 +181,11 @@ img.article-image {
 
 .portfolio-description {
     flex-grow: 1;
+    padding-top: 5px;
 }
 
 .mdl-card__title {
-    background-color: #ffd9df;
+    background-color: rgb(244, 187, 194);
 }
 
 .card-title {
@@ -202,6 +210,13 @@ img.article-image {
     opacity: 0.7;
 }
 
+.keywords {
+    background-color: rgb(159, 159, 159);
+    color: white;
+    border-radius: 5px;
+    padding: 3px 5px;
+}
+
 .center-text {
     text-align: center;
 }
@@ -222,4 +237,8 @@ footer {
 .footer-logo {
     font-family: 'Stalemate', cursive;
     font-size: 2rem;
+}
+
+main {
+    background-color: rgb(230, 230, 230);
 }
