@@ -9,7 +9,7 @@
     padding: 0;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .mdl-layout__header .mdl-layout__drawer-button {
@@ -41,6 +41,7 @@
 .portfolio-logo-row {
     min-height: 100px;
     background-color: rgb(230, 230, 230);
+    justify-content: flex-end;
 }
 
 .is-compact .portfolio-logo-row {
@@ -260,4 +261,9 @@ main {
 
 a {
     text-decoration: none;
+}
+
+.mdl-layout__header > .flex-column-end {
+    flex-direction: column;
+    justify-content: flex-end;
 }
