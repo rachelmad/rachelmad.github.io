@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+{% for post in site.categories.blog %}
+<div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+    <div class="mdl-card__title">
+        <div class="card-title"> {{ post.title }} </div>
+    </div>
+
+    <div class="mdl-grid mdl-card__supporting-text">
+        <div class="subtext"><span class="keywords"> {{ post.tools }} </span></div>
+        <div class="portfolio-description">
+
+            {{ post.content }}
+
+        </div>
+        <div class="subtext">
+            {{ post.display_date }}
+        </div>
+    </div>
+</div>
+{% endfor %}
+
