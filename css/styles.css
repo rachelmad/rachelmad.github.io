@@ -267,3 +267,8 @@ a {
     flex-direction: column;
     justify-content: flex-end;
 }
+
+code {
+    background-color: rgb(230, 230, 230);
+    padding: 5px;
+}

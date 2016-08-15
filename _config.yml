@@ -11,3 +11,5 @@ github_username:  jekyll
 # Build settings
 markdown: kramdown
 permalink: /entries/:year/:month/:day/:title
+highlighter: rouge
+
