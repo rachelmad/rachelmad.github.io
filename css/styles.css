@@ -1,6 +1,47 @@
+/*--------------- Layout ---------------*/
+.mdl-layout__title {
+    font-size: 5rem;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Stalemate', cursive;
+    line-height: 35px;
+}
+
+.portfolio-max-width {
+    max-width: 900px;
+    margin: auto;
+}
+
+main {
+    background-color: #C1C1C1;
+}
+
+footer {
+    background-size: cover;
+}
+
+.footer-logo {
+    font-family: 'Stalemate', cursive;
+    font-size: 2rem;
+}
+
+.mdl-mini-footer {
+    padding: 15px;
+    line-height: 0;
+    min-height: 25px;
+    max-height: 25px;
+}
+
+.mdl-mini-footer__right-section {
+    color: white;
+    font-family: 'Stalemate', cursive;
+    font-size: 2rem;
+    line-height: 35px;
+}
+
+/*--------------- Header ---------------*/
 .portfolio-header {
     position: relative;
-    /*background-image: url(images/header.jpg);*/
     width: 100%;
     background-color: white;
 }
@@ -14,51 +55,19 @@
 
 .mdl-layout__header .mdl-layout__drawer-button {
     background-color: transparent;
-    padding: 15px 0px;
+    padding: 15px 0;
 }
 
-.mdl-layout__title {
-    font-size: 5rem;
-    text-align: center;
-    font-weight: bold;
-    font-family: 'Stalemate', cursive;
-    line-height: 35px;
-}
-
-.flex-column {
+.mdl-layout__header > .flex-column-end {
     flex-direction: column;
-}
-
-.mdl-card__supporting-text {
-    display: flex;
-    flex-grow: 1;
-}
-
-.is-compact .mdl-layout__title span {
-    display: none;
-}
-
-.portfolio-logo-row {
-    min-height: 100px;
     justify-content: flex-end;
 }
 
-.is-compact .portfolio-logo-row {
-    min-height: auto;
-}
-
 .portfolio-logo {
-    /*background: url(images/logo.png) 50% no-repeat;*/
     background-size: cover;
     height: 150px;
     width: 150px;
     margin: auto auto 10px;
-}
-
-.is-compact .portfolio-logo {
-    height: 50px;
-    width: 50px;
-    margin-top: 7px;
 }
 
 .portfolio-navigation-row {
@@ -69,7 +78,7 @@
     background-color: rgb(230, 230, 230);
 }
 
-.portfolio-navigation-row  .mdl-navigation {
+.portfolio-navigation-row .mdl-navigation {
     text-align: center;
     max-width: 900px;
     width: 100%;
@@ -82,6 +91,7 @@
     line-height: 42px;
 }
 
+/*--------------- Header (currently unused) ---------------*/
 .portfolio-navigation-row .is-active {
     position: relative;
     font-weight: bold;
@@ -94,25 +104,29 @@
     display: block;
     position: absolute;
     bottom: 0;
-    left: 0;
+    /*left: 0;*/
     background-color: rgb(255,64,129);
-    left: 15%;
+    /*left: 15%;*/
+}
+
+/*--------------- Cards ---------------*/
+.mdl-card__supporting-text {
+    display: flex;
+    flex-grow: 1;
 }
 
 .portfolio-card .mdl-card__title {
     padding-bottom: 0;
 }
 
-.portfolio-blog-card-full-bg {
-    /*background: url(images/example-blog03.jpg) center / cover;*/
+.portfolio-copy {
+    max-width: 90%;
+    padding: 0 25px;
 }
 
-.portfolio-blog-card-event-bg {
-    /*background: url(images/example-blog05.jpg) center / cover;*/
-}
-
-.portfolio-blog-card-strip-bg {
-    /*background: url(images/example-blog06.jpg) center / cover;*/
+.portfolio-description {
+    flex-grow: 1;
+    padding-top: 5px;
 }
 
 .portfolio-blog-card-compact .mdl-card__title {
@@ -130,62 +144,6 @@ img.article-image {
     height: auto;
 }
 
-.portfolio-max-width {
-    max-width: 900px;
-    margin: auto;
-}
-
-.portfolio-copy {
-    max-width: 90%;
-    padding: 0px 25px;
-}
-
-.no-padding {
-    padding: 0;
-}
-
-.no-left-padding{
-    padding-left: 0;
-}
-
-.no-bottom-padding {
-    padding-bottom: 0;
-}
-
-.padding-top {
-    padding: 10px 0 0;
-}
-
-.portfolio-share-btn {
-    position: relative;
-    float: right;
-    top: -4px;
-}
-
-.demo-card-event > .mdl-card__actions {
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    box-sizing: border-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-}
-
-.portfolio-contact .mdl-textfield {
-    width: 100%;
-}
-
-.portfolio-contact form {
-    max-width: 550px;
-    margin: auto;
-}
-
-.portfolio-description {
-    flex-grow: 1;
-    padding-top: 5px;
-}
-
 .mdl-card__title {
     background-color: rgb(244, 187, 194);
 }
@@ -193,22 +151,41 @@ img.article-image {
 .card-title {
     font-family: 'Stalemate', cursive;
     font-size: 3rem;
-    margin: 0px 0px -10px 15px;
+    margin: 0 0 -10px 15px;
 }
 
 .small-card-title {
     padding: 5px 0 0 0;
 }
 
+/*--------------- Text ---------------*/
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 1rem;
+}
+
+h6 {
+    font-family: 'Rokkitt', serif;
+    font-size: 1.5rem;
+}
+
+code {
+    background-color: rgb(230, 230, 230);
+    padding: 5px;
+}
+
 .emphasize {
     font-weight: bold;
-    padding: 3px 0px;
+    padding: 3px 0;
 }
 
 .subtext {
     font-size: 0.8rem;
     text-transform: uppercase;
-    padding: 3px 0px;
+    padding: 3px 0;
     opacity: 0.7;
 }
 
@@ -227,57 +204,42 @@ img.article-image {
     font-size: 2rem;
 }
 
-.float-right {
-    float: right;
+/*--------------- Contact ---------------*/
+.portfolio-contact .mdl-textfield {
+    width: 100%;
 }
 
-footer {
-    /*background-image: url(images/footer-background.png);*/
-    background-size: cover;
+.portfolio-contact form {
+    max-width: 550px;
+    margin: auto;
 }
 
-.footer-logo {
-    font-family: 'Stalemate', cursive;
-    font-size: 2rem;
-}
-
-.mdl-mini-footer {
-    padding: 15px;
-    line-height: 0px;
-    min-height: 25px;
-    max-height: 25px;
-}
-
-.mdl-mini-footer__right-section {
-    color: white;
-    font-family: 'Stalemate', cursive;
-    font-size: 2rem;
-    line-height: 35px;
-}
-
-main {
-    background-color: #C1C1C1;
-}
-
-a {
-    text-decoration: none;
-}
-
-.mdl-layout__header > .flex-column-end {
+/*--------------- Others ---------------*/
+.flex-column {
     flex-direction: column;
+}
+
+.portfolio-logo-row {
+    min-height: 100px;
     justify-content: flex-end;
 }
 
-code {
-    background-color: rgb(230, 230, 230);
-    padding: 5px;
+.no-padding {
+    padding: 0;
 }
 
-p {
-    font-size: 1rem;
+.no-left-padding{
+    padding-left: 0;
 }
 
-h6 {
-    font-family: 'Rokkitt', serif;
-    font-size: 1.5rem;
+.no-bottom-padding {
+    padding-bottom: 0;
+}
+
+.padding-top {
+    padding: 10px 0 0;
+}
+
+.float-right {
+    float: right;
 }
