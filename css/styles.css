@@ -40,7 +40,6 @@
 
 .portfolio-logo-row {
     min-height: 100px;
-    background-color: rgb(230, 230, 230);
     justify-content: flex-end;
 }
 
@@ -67,6 +66,7 @@
     border-bottom: 2px solid black;
     text-transform: uppercase;
     height: 45px;
+    background-color: rgb(230, 230, 230);
 }
 
 .portfolio-navigation-row  .mdl-navigation {
@@ -271,4 +271,13 @@ a {
 code {
     background-color: rgb(230, 230, 230);
     padding: 5px;
+}
+
+p {
+    font-size: 1rem;
+}
+
+h6 {
+    font-family: 'Rokkitt', serif;
+    font-size: 1.5rem;
 }
