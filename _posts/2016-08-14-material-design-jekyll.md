@@ -104,7 +104,7 @@ Then, <code>{% raw %}{{ post.title }}{% endraw %}</code>, <code>{% raw %}{{ post
  display the title, tools, content, and date of each post onto different parts of the card.
 </p>
 
-<h6>Start writing blog posts!</h6>
+<h6>4. Start writing blog posts!</h6>
 <p>
 Remember that blog posts need to be titled in this format: <code>YYYY-MM-DD-blog-title</code> and stored in the 
 <code>_posts</code> folder. 
