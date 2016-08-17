@@ -1,6 +1,6 @@
 ---
 layout: large_card
-title: "How to use Material Design Lite with Jekyll"
+title: "Using Material Design Lite with Jekyll for a simple blog"
 display_date: "August 14, 2016"
 tools: Material Design Lite, Jekyll, Github Pages
 category: blog
@@ -18,7 +18,7 @@ am using Github Pages, Jekyll, and Material Design Lite for my personal site.
 
 <h6>1. Get an MDL template</h6>
 <p>
-Head on over to <a href="https://getmdl.io/templates/index.html">the Material Design Lite site</a> and find a template you like. 
+Head on over to the Material Design Lite site and find a <a href="https://getmdl.io/templates/index.html">template</a> you like. 
 I picked the Portfolio template, as it describes exactly what I wanted to do with my 
 <a href="https://pages.github.com/">Github Page</a>: a simple portfolio site to showcase
 my resume, projects, and even a blog. Download the template you like.
@@ -34,52 +34,34 @@ Any part of your site that should be included in all pages should go to your def
 Outside some minor changes, most of my 
 <a href="https://github.com/rachelmad/rachelmad.github.io/blob/master/_layouts/default.html">default page</a>
  looks very similar to the MDL template's index.html page. The most important part
-though, was changing the <code>main</code> section of the document. A simplified version of mine looks like this:
+though, was changing the <code>main</code> section of the document. The <code>main</code> section of mine looks like this:
 </p>
 
 {% highlight html linenos %}
-<html lang="en">
-<head>
-</head>
-<body>
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-    <header class="mdl-layout__header mdl-layout--fixed-header portfolio-header">
-    </header>
-    <div class="mdl-layout__drawer">
-        <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-        </nav>
+<main class="mdl-layout__content">
+    <div class="mdl-grid portfolio-max-width">
+        {% raw  %}
+        {{ content }}
+        {% endraw  %}
     </div>
-    <main class="mdl-layout__content">
-        <div class="mdl-grid portfolio-max-width">
-            {% raw  %}
-            {{ content }}
-            {% endraw  %}
-        </div>
-    </main>
-    <footer class="mdl-mini-footer">
-    </footer>
-</div>
-<script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
-</body>
-</html>
+</main>
 {% endhighlight %}
 
 <br>
 <p>
-On line 15, you see that I replaced most of the <code>main</code> section with {% raw %} {{ content }} {% endraw %}. 
-This means that the content from all the pages will go into this area. 
-</p>
-<p>
-This file can be reduced further once we add <a href="http://jekyll.tips/jekyll-casts/includes/">includes</a>.
- But for now, I'll leave it like this.
+You see that I replaced most of it with <code>{% raw %}{{ content }}{% endraw %}</code>. 
+This means that the content from all the pages will go into this area. The default layout must be stored as 
+<code>default.html</code> in the <code>_layouts</code> directory.
 </p>
 
 <h6>3. Create page layouts</h6>
 <p>
+Page layouts can be thought of as simplified versions of views or components in other frameworks. 
+They are reusable templates for the different parts of your site. They must also go as html files into the
+ <code>_layouts</code> directory along with your <code>default.html</code>. 
 <a href="https://getmdl.io/components/#cards-section">MDL cards</a> are incredibly useful for page layouts. 
-I used two main patterns for my pages, large cards and small cards. For my blog page,
-I loop through all my blog posts and place them inside large cards. Then for my projects page, I loop through all my projects and 
-put them in small cards. I don't even have to worry about card placements or grids. MDL has that all covered.
+I currently only have two layouts, the default and the large card layout. For my blog page,
+I loop through all my blog posts and place them inside large cards. 
 </p>
 <p>
 Here's a peek of how my <a href="https://github.com/rachelmad/rachelmad.github.io/blob/master/blog/index.html">blog index page</a>
@@ -111,6 +93,47 @@ layout: default
 
 <br>
 <p>
-And there you have it! Material Design Lite on Jekyll static pages. 
+The YAML section, lines 1-3, tells Jekyll which layout this page will use. 
+This means that all the code below it will be inserted in the
+ <code>{% raw %}{{ content }}{% endraw %}</code> section of the default page.
+</p>
+<p>
+The second part, lines 5-20, loops through all my blog posts. 
+Then, <code>{% raw %}{{ post.title }}{% endraw %}</code>, <code>{% raw %}{{ post.tools }}{% endraw %}</code>,
+ <code>{% raw %}{{ post.content }}{% endraw %}</code>, and <code>{% raw %}{{ post.display_date }}{% endraw %}</code>
+ display the title, tools, content, and date of each post onto different parts of the card.
+</p>
 
+<h6>Start writing blog posts!</h6>
+<p>
+Remember that blog posts need to be titled in this format: <code>YYYY-MM-DD-blog-title</code> and stored in the 
+<code>_posts</code> folder. 
+The <a href="https://jekyllrb.com/docs/posts/">official site</a> has far better documentation than I will come up with. 
+But as a guide, here is my YAML matter for this post:
+</p>
+
+{% highlight liquid linenos %}
+---
+layout: large_card
+title: "Using Material Design Lite with Jekyll for a simple blog"
+display_date: "August 14, 2016"
+tools: Material Design Lite, Jekyll, Github Pages
+category: blog
+---
+{% endhighlight %}
+
+<p>
+As I mentioned earlier, <code>layout</code> tells Jekyll which layout to place the blog entry uses. Then, you'll notice
+ <code>title</code>, <code>display_date</code>, and <code>tools</code> are the sections I wrote displays for in the previous step. 
+ Also, as the name implies, I use <code>category</code> to categorize the files under <code>_post</code>.
+  Finally, everything below the YAML matter is considered part of the post's <code>content</code>
+</p>
+<p>
+Later I will go into more detail about how I use categories and how I created the small cards for the projects page. 
+But for now, this is all that's needed for a basic blog.
+</p>
+
+<p> 
+And there you have it! Material Design Lite on Jekyll static pages. 
+</p>
 
