@@ -127,6 +127,7 @@ footer {
 .portfolio-description {
     flex-grow: 1;
     padding-top: 5px;
+    width: inherit;
 }
 
 .portfolio-blog-card-compact .mdl-card__title {
