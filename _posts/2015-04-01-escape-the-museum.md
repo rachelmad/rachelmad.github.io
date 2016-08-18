@@ -4,6 +4,7 @@ title: "Escape the Museum"
 company: "Science Hack Day Houston"
 display_date: "April 2015"
 tools: "Python, Pygame"
+show: true
 category: projects
 link: https://github.com/rachelmad/EscapeTheMuseum
 link_name: Github

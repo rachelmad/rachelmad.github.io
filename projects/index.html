@@ -3,6 +3,7 @@ layout: default
 ---
 
 {% for post in site.categories.projects %}
+{% if post.show == true %}
 <div class="mdl-cell mdl-card mdl-shadow--4dp">
     <!--<div class="mdl-card__media">-->
         <!--<img class="article-image" src=" images/example-work01.jpg" border="0" alt="">-->
@@ -35,4 +36,5 @@ layout: default
         </div>
     {% endif %}
 </div>
+{% endif %}
 {% endfor %}
