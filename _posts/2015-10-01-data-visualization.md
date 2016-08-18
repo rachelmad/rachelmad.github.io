@@ -8,4 +8,4 @@ category: projects
 ---
 
 I helped create customizable data visualizations for data scientists at National Oilwell Varco, helping them
-understand which data sets and time ranges to focus on.
+understand which data sets and time ranges to focus their research on.
