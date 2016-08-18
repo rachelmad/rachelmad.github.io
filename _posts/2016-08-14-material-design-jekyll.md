@@ -1,7 +1,6 @@
 ---
 layout: large_card
 title: "Using Material Design Lite with Jekyll for a simple blog"
-display_date: "August 14, 2016"
 tools: Material Design Lite, Jekyll, Github Pages
 category: blog
 ---
