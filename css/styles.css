@@ -70,6 +70,11 @@ footer {
     margin: auto auto 10px;
 }
 
+.portfolio-logo-row {
+    min-height: 100px;
+    justify-content: flex-end;
+}
+
 .portfolio-navigation-row {
     border-top: 2px solid black;
     border-bottom: 2px solid black;
@@ -206,6 +211,13 @@ code {
     font-size: 2rem;
 }
 
+/*--------------- Blog ---------------*/
+.blog-details {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
 /*--------------- Contact ---------------*/
 .portfolio-contact .mdl-textfield {
     width: 100%;
@@ -221,9 +233,12 @@ code {
     flex-direction: column;
 }
 
-.portfolio-logo-row {
-    min-height: 100px;
-    justify-content: flex-end;
+.flex1 {
+    flex-grow: 1;
+}
+
+.button-left {
+    margin-left: -16px;
 }
 
 .no-padding {
