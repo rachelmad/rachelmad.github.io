@@ -211,6 +211,10 @@ code {
     font-size: 2rem;
 }
 
+.color-white {
+    color: white;
+}
+
 /*--------------- Blog ---------------*/
 .blog-details {
     display: flex;
@@ -259,4 +263,8 @@ code {
 
 .float-right {
     float: right;
+}
+
+.margin-side {
+    margin: 0 5px;
 }
