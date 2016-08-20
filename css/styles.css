@@ -1,3 +1,8 @@
+* {
+    font-family: 'Lato', sans-serif;
+    /*font-size: 1rem;*/
+}
+
 /*--------------- Layout ---------------*/
 .mdl-layout__title {
     font-size: 5rem;
@@ -156,12 +161,31 @@ img.article-image {
 
 .card-title {
     font-family: 'Stalemate', cursive;
+    /*font-weight: 700;*/
+    /*text-transform: uppercase;*/
     font-size: 3rem;
     margin: 0 0 -10px 15px;
 }
 
+.text-card-top {
+    padding: 16px 16px 0 16px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-card-title {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 1.7rem;
+}
+
+.clear-card-subtext {
+    color: rgba(0,0,0,.54);
+}
+
 .small-card-title {
-    padding: 5px 0 0 0;
+    /*padding: 5px 0 0 0;*/
 }
 
 /*--------------- Text ---------------*/
@@ -170,11 +194,10 @@ a {
 }
 
 p {
-    font-size: 1rem;
+    font-size: 16px;
 }
 
 h6 {
-    font-family: 'Rokkitt', serif;
     font-size: 1.5rem;
 }
 
@@ -182,6 +205,10 @@ code {
     background-color: rgb(230, 230, 230);
     box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.4);
     padding: 2px;
+}
+
+.font-styled {
+    font-family: 'Stalemate', cursive;
 }
 
 .emphasize {
@@ -251,6 +278,10 @@ code {
 
 .no-left-padding{
     padding-left: 0;
+}
+
+.no-top-padding {
+    padding-top: 0;
 }
 
 .no-bottom-padding {
