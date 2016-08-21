@@ -159,11 +159,12 @@ img.article-image {
 }
 
 .card-title {
-    font-family: 'Stalemate', cursive;
+    font-family: 'Didact Gothic', sans-serif;
+    /*font-family: 'Stalemate', cursive;*/
     /*font-weight: 700;*/
     /*text-transform: uppercase;*/
-    font-size: 3rem;
-    margin: 0 0 -10px 15px;
+    font-size: 1.7rem;
+    margin-left: 15px;
 }
 
 .text-card-top {
