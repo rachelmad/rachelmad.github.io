@@ -1,6 +1,6 @@
-* {
+body, h1, h2, h3, h4, h5, h6 {
     font-family: 'Lato', sans-serif;
-    /*font-size: 1rem;*/
+    /*font-size: 16px;*/
 }
 
 /*--------------- Layout ---------------*/
@@ -137,7 +137,6 @@ footer {
 .portfolio-description {
     flex-grow: 1;
     padding-top: 5px;
-    width: inherit;
 }
 
 .portfolio-blog-card-compact .mdl-card__title {
@@ -212,15 +211,16 @@ code {
 }
 
 .emphasize {
+    font-size: 16px;
     font-weight: bold;
     padding: 3px 0;
 }
 
 .subtext {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     text-transform: uppercase;
     padding: 3px 0;
-    opacity: 0.7;
+    opacity: 0.75;
 }
 
 .keywords {
