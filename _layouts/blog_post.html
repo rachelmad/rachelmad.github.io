@@ -1,13 +1,23 @@
 ---
-layout: large_card
+layout: default
 ---
 
-<div class="subtext"><span class="keywords"> {{ page.tools }} </span></div>
-<div class="portfolio-description">
+<div class="mdl-cell mdl-cell--10-col mdl-cell--1-offset mdl-card mdl-shadow--4dp">
+    <div class="mdl-card__title text-card-top">
+        <div class="text-card-title">{{ page.title }}</div>
+        <div class="subtext clear-card-subtext">{{ page.date | date: '%d %B %Y' }}</div>
+    </div>
 
-    {{ page.content }}
+    <div class="mdl-grid mdl-card__supporting-text">
+        <div class="blog-details">
+            <div class="subtext flex1">
+                <span class="keywords"> {{ page.tools }} </span>
+            </div>
+        </div>
+        <div class="portfolio-description">
 
-</div>
-<div class="subtext">
-    {{ page.date | date: '%d %B %Y' }}
+            {{ page.content }}
+
+        </div>
+    </div>
 </div>
