@@ -2,7 +2,8 @@
     background: rgb(230, 230, 230);
     max-height: 300px;
     overflow: scroll;
-    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.4);
+    border: 1px #C1C1C1;
+    border-radius: 3px;
 }
 
 .highlight .c { color: #999988; font-style: italic } /* Comment */
