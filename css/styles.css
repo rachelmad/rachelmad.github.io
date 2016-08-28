@@ -244,6 +244,10 @@ code {
     color: white;
 }
 
+.color-pink {
+    color: rgb(244, 187, 194);
+}
+
 /*--------------- Blog ---------------*/
 .blog-details {
     display: flex;
