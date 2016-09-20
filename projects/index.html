@@ -8,23 +8,18 @@ layout: default
     <!--<div class="mdl-card__media">-->
         <!--<img class="article-image" src=" images/example-work01.jpg" border="0" alt="">-->
     <!--</div>-->
-    <!--<div class="mdl-card__title small-card-title">-->
-        <!--<div class="card-title"> {{ post.title }} </div>-->
-    <!--</div>-->
     <div class="mdl-card__title text-card-top">
         <div class="text-card-title">{{ post.title }}</div>
         <div class="subtext clear-card-subtext center-text">{{ post.company }}: {{ post.display_date }}</div>
     </div>
 
     <div class="mdl-card__supporting-text flex-column no-top-padding">
-
         <div class="portfolio-description">
 
             {{ post.excerpt }}
 
         </div>
         <div class="subtext"><span class="keywords"> {{ post.tools }} </span></div>
-
     </div>
 
     {% if post.link %}
