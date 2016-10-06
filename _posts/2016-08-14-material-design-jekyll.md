@@ -3,6 +3,7 @@ layout: blog_post
 title: "Using Material Design Lite with Jekyll for a simple blog"
 tools: Material Design Lite, Jekyll, Github Pages
 category: blog
+show: true
 ---
 
 <p>

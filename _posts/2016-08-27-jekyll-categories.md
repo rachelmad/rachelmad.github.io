@@ -3,6 +3,7 @@ layout: blog_post
 title: "Creating a Jekyll portfolio through categories"
 tools: Material Design Lite, Jekyll, Github Pages
 category: blog
+show: true
 ---
 
 Categories can be added to all Jekyll posts. 
