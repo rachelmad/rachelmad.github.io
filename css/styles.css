@@ -266,6 +266,10 @@ code {
 }
 
 /*--------------- Others ---------------*/
+.max-width {
+    width: 100%;
+}
+
 .flex-column {
     flex-direction: column;
 }
