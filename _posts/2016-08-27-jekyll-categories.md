@@ -143,3 +143,7 @@ That block looks like this:
 <p>
 And that should be it. Hope someone finds this helpful!
 </p>
+
+<p>
+If this is interesting, don't forget to check out my entry on 
+<a href="/entries/2016/08/14/material-design-jekyll">using material design lite</a> on your Jekyll blog.

@@ -124,7 +124,8 @@ On my YAML matter, I simply indicate the layout the page will use and its title.
 Then below it, I write everything I'd like to appear on the card (which is rather short in this case).
 </p>
 <p>
-Later I will go into more detail about how I use categories for the experiences, projects, and blog page. 
+I've discussed how I use categories for the experiences, projects, and blog page, 
+<a href="/entries/2016/08/27/jekyll-categories">here</a>. 
 But for now, this is all that's needed for a basic blog.
 </p>
 
