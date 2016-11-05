@@ -75,7 +75,7 @@ It makes it hard to revert or double check on old code.
 Before pushing, I do this instead:
 
 {% highlight html linenos %}
-git revert -i
+git rebase -i
 {% endhighlight %}
 
 <p>
