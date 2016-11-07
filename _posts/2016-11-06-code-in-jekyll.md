@@ -6,8 +6,6 @@ category: blog
 show: true
 ---
 
-{% assign openTag = '{%' %}
-
 I use Jekyll for this blog and needed to find ways to add code snippets to it. 
 It required quite a bit of searching though, 
 and the default preferences aren't my favorite. 
@@ -87,6 +85,8 @@ to any of the many languages listed
 Sometimes, you may have to explain something in Angular or Jekyll itself. 
 You don't want Jekyll to interpret the written lines as code. 
 The solution is to wrap the code in a raw block
+
+{% assign openTag = '{%' %}
 
 {% highlight liquid linenos %}
 {% raw %}
