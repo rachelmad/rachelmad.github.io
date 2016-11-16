@@ -4,6 +4,8 @@
     overflow: scroll;
     border: 1px #C1C1C1;
     border-radius: 3px;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .highlight .c { color: #999988; font-style: italic } /* Comment */
