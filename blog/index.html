@@ -12,9 +12,11 @@ layout: default
 
     <div class="mdl-grid mdl-card__supporting-text">
         <div class="blog-details">
-            <div class="subtext flex1">
-                <span class="keywords"> {{ post.tools }} </span>
-            </div>
+            {% for tool in post.tools %}
+                <span class="mdl-chip">
+                    <span class="mdl-chip__text">{{ tool }}</span>
+                </span>
+            {% endfor %}
         </div>
         <div class="portfolio-description">
 

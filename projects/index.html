@@ -19,7 +19,13 @@ layout: default
             {{ post.excerpt }}
 
         </div>
-        <div class="subtext"><span class="keywords"> {{ post.tools }} </span></div>
+        <div>
+            {% for tool in post.tools %}
+                <span class="mdl-chip">
+                    <span class="mdl-chip__text">{{ tool }}</span>
+                </span>
+            {% endfor %}
+        </div>
     </div>
 
     {% if post.link %}

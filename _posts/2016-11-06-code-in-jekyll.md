@@ -1,7 +1,11 @@
 ---
 layout: blog_post
 title: "Displaying code in Jekyll"
-tools: Jekyll, Liquid, HTML, CSS
+tools: 
+- Jekyll
+- Liquid
+- HTML
+- CSS
 category: blog
 show: true
 ---

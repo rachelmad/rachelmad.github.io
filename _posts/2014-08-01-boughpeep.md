@@ -3,7 +3,10 @@ layout: large_card
 title: "ProudParent"
 company: "University of Houston"
 display_date: "August 2014 - December 2014"
-tools: "JavaScript, AngularJS, Microsoft Azure"
+tools: 
+- JavaScript
+- AngularJS
+- Microsoft Azure
 show: true
 category: projects
 link: https://github.com/rachelmad/ProudParent

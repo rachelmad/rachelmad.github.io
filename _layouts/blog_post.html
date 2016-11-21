@@ -10,14 +10,25 @@ layout: default
 
     <div class="mdl-grid mdl-card__supporting-text">
         <div class="blog-details">
-            <div class="subtext flex1">
+            {% for tool in page.tools %}
+                <span class="mdl-chip">
+                    <span class="mdl-chip__text">{{ tool }}</span>
+                </span>
+            {% endfor %}
+<!--             <div class="subtext flex1">
                 <span class="keywords"> {{ page.tools }} </span>
-            </div>
+            </div> -->
         </div>
         <div class="portfolio-description">
 
             {{ page.content }}
 
+        </div>
+
+        <div>
+            {% if page.comments %}
+                {% include comments.html %}
+            {% endif %}
         </div>
     </div>
 </div>

@@ -3,7 +3,12 @@ layout: large_card
 title: "Mastermind"
 company: "Independent"
 display_date: "September 2016"
-tools: "Ionic 2, Angular 2, TypeScript, HTML, SCSS"
+tools: 
+- Ionic 2
+- Angular 2
+- TypeScript
+- HTML
+- SCSS
 show: true
 category: projects
 link: hhttps://github.com/rachelmad/mastermind

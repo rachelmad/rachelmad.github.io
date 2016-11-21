@@ -1,9 +1,13 @@
 ---
 layout: blog_post
 title: "Using Material Design Lite with Jekyll for a simple blog"
-tools: Material Design Lite, Jekyll, Github Pages
+tools: 
+- Material Design Lite
+- Jekyll
+- Github Pages
 category: blog
 show: true
+comments: true
 ---
 
 <p>
@@ -132,4 +136,3 @@ But for now, this is all that's needed for a basic blog.
 <p> 
 And there you have it! Material Design Lite on Jekyll static pages. 
 </p>
-

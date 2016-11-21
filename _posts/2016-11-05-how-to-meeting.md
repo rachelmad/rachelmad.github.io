@@ -1,7 +1,8 @@
 ---
 layout: blog_post
 title: "How to run a meeting"
-tools: Management
+tools: 
+- Management
 category: blog
 show: true
 ---

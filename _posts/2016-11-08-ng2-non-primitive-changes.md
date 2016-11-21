@@ -1,7 +1,9 @@
 ---
 layout: blog_post
 title: "Non-Primitive Inputs in Angular 2"
-tools: Angular2, TypeScript
+tools: 
+- Angular2
+- TypeScript
 category: blog
 show: true
 ---

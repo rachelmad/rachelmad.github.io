@@ -1,7 +1,10 @@
 ---
 layout: blog_post
-title: "Changing SVG styles with JavaScript"
-tools: SVG, JavaScript, CSS
+title: "Changing SVG styles with the DOM API"
+tools: 
+- SVG
+- JavaScript
+- CSS
 category: blog
 show: true
 ---
@@ -41,8 +44,9 @@ let svg = svgdoc.getElementById("my_svg");
 <p>
 Note that if an SVG is displayed using an 
 <code>img</code> tag, 
-it cannot be accessed programmatically. 
-So the following steps won't work.  
+the following steps won't work.  
+<code>img</code> tags render the SVGs as just that, images. 
+Thus, their DOM elements can no longer be accessed programmatically. 
 </p>
 
 <h6>Accessing child elements</h6>

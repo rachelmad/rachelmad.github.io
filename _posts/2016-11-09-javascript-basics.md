@@ -1,7 +1,8 @@
 ---
 layout: blog_post
 title: "JavaScript Basics"
-tools: JavaScript
+tools: 
+- JavaScript
 category: blog
 show: true
 ---

@@ -1,7 +1,8 @@
 ---
 layout: blog_post
 title: "Tech Blog Thursday: tom.preston-werner.com"
-tools: TechBlogThursday
+tools: 
+- TechBlogThursday
 category: blog
 show: true
 ---

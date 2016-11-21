@@ -1,7 +1,8 @@
 ---
 layout: blog_post
 title: "How to fix mistakes in Git"
-tools: Git
+tools: 
+- Git
 category: blog
 show: true
 ---

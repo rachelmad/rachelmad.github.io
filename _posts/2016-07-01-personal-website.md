@@ -3,7 +3,12 @@ layout: large_card
 title: "Personal Website"
 company: "Independent"
 display_date: "August 2016"
-tools: "HTML, CSS, Jekyll, Material Design Lite, Github Pages"
+tools: 
+- HTML
+- CSS
+- Jekyll
+- Material Design Lite
+- Github Pages
 show: true
 category: projects
 link: https://github.com/rachelmad/rachelmad.github.io

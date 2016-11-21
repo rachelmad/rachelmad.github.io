@@ -3,7 +3,9 @@ layout: large_card
 title: "Escape the Museum"
 company: "Science Hack Day Houston"
 display_date: "April 2015"
-tools: "Python, Pygame"
+tools: 
+- Python
+- Pygame
 show: true
 category: projects
 link: https://github.com/rachelmad/EscapeTheMuseum

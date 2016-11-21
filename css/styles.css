@@ -250,10 +250,8 @@ code {
 }
 
 /*--------------- Blog ---------------*/
-.blog-details {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+.blog-details .mdl-chip {
+    font-family: 'Lato', sans-serif;
 }
 
 /*--------------- Contact ---------------*/

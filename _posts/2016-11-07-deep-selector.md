@@ -1,7 +1,10 @@
 ---
 layout: blog_post
 title: "Angular 2's deep selector"
-tools: Angular2, Ionic 2, CSS
+tools: 
+- Angular2
+- Ionic 2
+- CSS
 category: blog
 show: true
 ---
