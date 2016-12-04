@@ -8,8 +8,12 @@ url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
+collections:
+  tagged:
+    output: true
+    permalink: /tagged/:path/
+
 # Build settings
 markdown: kramdown
 permalink: /entries/:year/:month/:day/:title
 highlighter: rouge
-
