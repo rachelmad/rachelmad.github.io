@@ -1,4 +1,23 @@
-<a href="/tagged/{{ include.name }}">
+{% case include.name %}
+	{% when "Angular 2" %}
+		{% assign tagName="angular2" %}
+	{% when "ASP.NET" %}
+		{% assign tagName="aspnet" %}
+	{% when "Github Pages" %}
+		{% assign tagName="githubpages" %}
+	{% when "Ionic 2" %}
+		{% assign tagName="ionic2" %}
+	{% when "Material Design Lite" %}
+		{% assign tagName="mdl" %}
+	{% when "OSI PI" %}
+		{% assign tagName="osipi" %}
+	{% when "Tech Blog Thursday" %}
+		{% assign tagName="tbt" %}
+	{% else %}
+		{% assign tagName=include.name %}
+{% endcase %}
+
+<a href="/tagged/{{ tagName }}">
     <span class="mdl-chip">
         <span class="mdl-chip__text">{{ include.name }}</span>
     </span>
