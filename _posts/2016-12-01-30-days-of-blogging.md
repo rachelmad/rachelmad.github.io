@@ -27,7 +27,7 @@ and new git commands.
 
 <h6>How to talk technically</h6>
 <p>
-I've always prided myself in being able to translate technical terms 
+I've always taken pride in being able to translate technical terms 
 into simpler ones that non-developers can understand. 
 Mostly, because I don't like throwing around technical terms as I speak. 
 Writing about programming forced me to add them into my vernacular, 
@@ -38,9 +38,10 @@ and more importantly, it forced me to be more confident in using them.
 <p>
 I didn't want to write just for the sake of it. 
 I made sure each entry was grammatically and technically correct. 
-And as I've heard plenty of times, like a mini skirt. 
-I wanted them short enough to keep people's interest, 
-but long enough to cover the important bits. 
+I also wanted it to be just the right length. 
+As they say, it should be like a mini skirt; 
+short enough to keep people's interest, 
+but long enough to cover the important parts. 
 </p>
 
 <h6>Reading even more often</h6>
