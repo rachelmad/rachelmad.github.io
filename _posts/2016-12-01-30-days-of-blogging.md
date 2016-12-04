@@ -1,7 +1,7 @@
 ---
 layout: blog_post
 title: "30 Days of Blogging"
-tools: 
+tags: 
 - Monthly challenge
 category: blog
 show: false

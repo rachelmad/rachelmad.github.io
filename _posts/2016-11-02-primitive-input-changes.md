@@ -1,8 +1,8 @@
 ---
 layout: blog_post
 title: "Change detection on primitive inputs in Angular 2"
-tools: 
-- Angular2
+tags: 
+- Angular 2
 - TypeScript
 category: blog
 show: true

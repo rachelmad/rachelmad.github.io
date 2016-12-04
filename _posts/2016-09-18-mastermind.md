@@ -3,7 +3,7 @@ layout: large_card
 title: "Mastermind"
 company: "Independent"
 display_date: "September 2016"
-tools: 
+tags: 
 - Ionic 2
 - Angular 2
 - TypeScript

@@ -3,7 +3,7 @@ layout: large_card
 title: "Personal Website"
 company: "Independent"
 display_date: "August 2016"
-tools: 
+tags: 
 - HTML
 - CSS
 - Jekyll

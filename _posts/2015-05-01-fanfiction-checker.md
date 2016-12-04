@@ -3,7 +3,7 @@ layout: large_card
 title: "Fanfiction Checker"
 company: "Independent"
 display_date: "May 2015 - June 2015"
-tools: 
+tags: 
 - Python
 show: true
 category: projects

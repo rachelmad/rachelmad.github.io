@@ -3,7 +3,7 @@ layout: large_card
 title: "ProudParent"
 company: "University of Houston"
 display_date: "August 2014 - December 2014"
-tools: 
+tags: 
 - JavaScript
 - AngularJS
 - Microsoft Azure

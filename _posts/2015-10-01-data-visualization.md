@@ -4,7 +4,7 @@ title: "Data Visualization Tools"
 company: "National Oilwell Varco"
 display_date: "October 2015"
 show: true
-tools: 
+tags: 
 - Python
 - Pandas
 - Bokeh

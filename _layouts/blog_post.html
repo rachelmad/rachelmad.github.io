@@ -10,9 +10,9 @@ layout: default
 
     <div class="mdl-grid mdl-card__supporting-text">
         <div class="blog-details">
-            {% for tool in page.tools %}
+            {% for tag in page.tags %}
                 <span class="mdl-chip">
-                    <span class="mdl-chip__text">{{ tool }}</span>
+                    <span class="mdl-chip__text">{{ tag }}</span>
                 </span>
             {% endfor %}
 <!--             <div class="subtext flex1">

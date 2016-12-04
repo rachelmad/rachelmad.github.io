@@ -3,7 +3,7 @@ layout: large_card
 title: "Uma's Car Dealership"
 company: "University of Houston"
 display_date: "January 2014 - May 2014"
-tools: 
+tags: 
 - SQL
 - ASP.NET
 - C#

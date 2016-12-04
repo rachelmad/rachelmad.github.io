@@ -1,8 +1,8 @@
 ---
 layout: blog_post
 title: "Tech Blog Thursday: mislav.net"
-tools: 
-- TechBlogThursday
+tags: 
+- Tech Blog Thursday
 category: blog
 show: true
 ---

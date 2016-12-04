@@ -1,7 +1,7 @@
 ---
 layout: blog_post
 title: "Using Material Design Lite with Jekyll for a simple blog"
-tools: 
+tags: 
 - Material Design Lite
 - Jekyll
 - Github Pages

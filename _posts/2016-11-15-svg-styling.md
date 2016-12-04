@@ -1,7 +1,7 @@
 ---
 layout: blog_post
 title: "Changing SVG styles with the DOM API"
-tools: 
+tags: 
 - SVG
 - JavaScript
 - CSS

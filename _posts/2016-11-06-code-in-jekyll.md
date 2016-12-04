@@ -1,7 +1,7 @@
 ---
 layout: blog_post
 title: "Displaying code in Jekyll"
-tools: 
+tags: 
 - Jekyll
 - Liquid
 - HTML

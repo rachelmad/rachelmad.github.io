@@ -1,7 +1,7 @@
 ---
 layout: blog_post
 title: "Creating a Jekyll portfolio through categories"
-tools: 
+tags: 
 - Material Design Lite
 - Jekyll
 - Github Pages

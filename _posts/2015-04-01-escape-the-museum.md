@@ -3,7 +3,7 @@ layout: large_card
 title: "Escape the Museum"
 company: "Science Hack Day Houston"
 display_date: "April 2015"
-tools: 
+tags: 
 - Python
 - Pygame
 show: true
