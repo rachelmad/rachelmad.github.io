@@ -11,9 +11,12 @@ layout: default
     <div class="mdl-grid mdl-card__supporting-text">
         <div class="blog-details">
             {% for tag in page.tags %}
-                <span class="mdl-chip">
-                    <span class="mdl-chip__text">{{ tag }}</span>
-                </span>
+                {% include chip.html name=tag %}
+<!--                 <a href="/tagged/{{ tag }}">
+                    <span class="mdl-chip">
+                        <span class="mdl-chip__text">{{ tag }}</span>
+                    </span>
+                </a> -->
             {% endfor %}
 <!--             <div class="subtext flex1">
                 <span class="keywords"> {{ page.tools }} </span>

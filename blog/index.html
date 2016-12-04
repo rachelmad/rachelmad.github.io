@@ -13,9 +13,7 @@ layout: default
     <div class="mdl-grid mdl-card__supporting-text">
         <div class="blog-details">
             {% for tag in post.tags %}
-                <span class="mdl-chip">
-                    <span class="mdl-chip__text">{{ tag }}</span>
-                </span>
+                {% include chip.html name=tag %}
             {% endfor %}
         </div>
         <div class="portfolio-description">

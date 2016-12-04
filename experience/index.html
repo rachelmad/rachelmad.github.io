@@ -44,9 +44,7 @@ layout: default
         <div class="mdl-cell mdl-cell--8-col">
             <div class="emphasize"> {{ post.title }}</div>
             {% for tag in post.tags %}
-            <span class="mdl-chip">
-                <span class="mdl-chip__text">{{ tag }}</span>
-            </span>
+                {% include chip.html name=tag %}
             {% endfor %}
             <div class="portfolio-description">
 
