@@ -17,7 +17,7 @@
 		{% assign tagName=include.name %}
 {% endcase %}
 
-<a href="/tagged/{{ tagName }}">
+<a href="/tagged/{{ tagName | downcase }}">
     <span class="mdl-chip">
         <span class="mdl-chip__text">{{ include.name }}</span>
     </span>
