@@ -188,6 +188,11 @@ img.article-image {
     /*padding: 5px 0 0 0;*/
 }
 
+.bottom-line {
+    border-bottom: 2px solid rgb(230, 230, 230);
+    margin-bottom: 7px;
+}
+
 /*--------------- Text ---------------*/
 a {
     text-decoration: none;
@@ -233,6 +238,13 @@ code {
     padding: 3px 5px;
 }
 
+.script-title {
+    font-family: 'Stalemate', cursive;
+    font-size: 4rem;
+    padding-top: 2.5rem;
+    z-index: 2;
+}
+
 .center-text {
     text-align: center;
 }
@@ -267,6 +279,14 @@ code {
 /*--------------- Others ---------------*/
 .max-width {
     width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
 }
 
 .flex-column {

@@ -1,0 +1,103 @@
+---
+layout: default
+---
+
+<span class="center-text flex1 script-title">{{ page.name }}</span>
+
+<div class="mdl-cell mdl-cell--10-col mdl-cell--1-offset mdl-card mdl-shadow--4dp">
+    <div class="mdl-card__title">
+        <div class="card-title">Work</div>
+    </div>
+    <div class="mdl-grid mdl-card__supporting-text">
+        {% for post in site.categories.work_experience %}
+        	{% for tag in post.tags %}
+        		{% if tag == page.name %}
+			        <div class="mdl-cell mdl-cell--4-col">
+			            <div class="emphasize"> {{ post.company }}</div>
+			            <div class="subtext"> {{ post.display_date }}</div>
+			        </div>
+			        <div class="mdl-cell mdl-cell--8-col">
+			            <div class="emphasize"> {{ post.title }}</div>
+			            {% for tag in post.tags %}
+			                {% include chip.html name=tag %}
+			            {% endfor %}
+			            <div class="portfolio-description">
+
+			                {{ post.excerpt }}
+
+			            </div>
+			        </div>
+		        {% endif %}
+	        {% endfor %}
+        {% endfor %}
+    </div>
+</div>
+
+<div class="mdl-cell mdl-cell--10-col mdl-cell--1-offset mdl-card mdl-shadow--4dp">
+    <div class="mdl-card__title">
+        <div class="card-title">Projects</div>
+    </div>
+    <div class="mdl-grid mdl-card__supporting-text">
+        {% for post in site.categories.projects %}
+        	{% for tag in post.tags %}
+        		{% if tag == page.name %}
+			        <div class="mdl-cell mdl-cell--4-col">
+			            <div class="emphasize"> {{ post.title }}</div>
+			            <div class="subtext"> {{ post.company }}:</div>
+			            <div class="subtext"> {{ post.display_date }}</div>
+			        </div>
+			        <div class="mdl-cell mdl-cell--8-col">
+			            {% for tag in post.tags %}
+			                {% include chip.html name=tag %}
+			            {% endfor %}
+			            <div class="portfolio-description">
+
+			                {{ post.excerpt }}
+
+			            </div>
+			        </div>
+		        {% endif %}
+	        {% endfor %}
+        {% endfor %}
+    </div>
+</div>
+
+<div class="mdl-cell mdl-cell--10-col mdl-cell--1-offset mdl-card mdl-shadow--4dp">
+    <div class="mdl-card__title">
+        <div class="card-title">Blog</div>
+    </div>
+    <div class="mdl-grid mdl-card__supporting-text">
+        {% for post in site.categories.blog %}
+        	{% if post.show == true %}
+		    	{% for tag in post.tags %}
+		    		{% if tag == page.name %}
+		    			<div class="flex-column bottom-line">
+		    				<div class="flex space-between">
+		    					<div class="flex-column">
+		    						<div class="emphasize">{{ post.title }}</div>
+		    				<div class="subtext">{{ post.date | date: '%d %B %Y' }}</div>
+		    					</div>
+					        <div class="blog-details">
+					            {% for tag in post.tags %}
+					                {% include chip.html name=tag %}
+					            {% endfor %}
+					        </div>
+		    				</div>
+
+					        <div class="portfolio-description">
+
+					            {{ post.excerpt }}
+
+					        </div>
+					        <div>
+					            <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent button-left" href={{ post.url }}>
+					                Read more
+					            </a>
+					        </div>
+		    			</div>
+			        {% endif %}
+		        {% endfor %}
+	        {% endif %}
+        {% endfor %}
+    </div>
+</div>
