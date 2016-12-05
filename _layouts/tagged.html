@@ -2,7 +2,9 @@
 layout: default
 ---
 
-<span class="center-text flex1 script-title">{{ page.name }}</span>
+<div class="mdl-cell mdl-cell--10-col mdl-cell--1-offset negative-bottom-margin z1 mdl-c">
+	<span class="script-title">{{ page.name }}</span>
+</div>
 
 {% assign first_work_experience = true %}
 {% assign has_work_experience = false %}
@@ -10,7 +12,7 @@ layout: default
 	{% for tag in post.tags %}
 		{% if tag == page.name %}
 			{% if first_work_experience %}
-				<div class="mdl-cell mdl-cell--10-col mdl-cell--1-offset mdl-card mdl-shadow--4dp">
+				<div class="mdl-cell mdl-cell--10-col mdl-cell--1-offset mdl-card mdl-shadow--4dp z0">
 				    <div class="mdl-card__title">
 				        <div class="card-title">Work</div>
 				    </div>
@@ -48,7 +50,7 @@ layout: default
 	{% for tag in post.tags %}
 		{% if tag == page.name %}
 			{% if first_project %}
-				<div class="mdl-cell mdl-cell--10-col mdl-cell--1-offset mdl-card mdl-shadow--4dp">
+				<div class="mdl-cell mdl-cell--10-col mdl-cell--1-offset mdl-card mdl-shadow--4dp z0">
 				    <div class="mdl-card__title">
 				        <div class="card-title">Projects</div>
 				    </div>
@@ -87,7 +89,7 @@ layout: default
 		{% for tag in post.tags %}
 			{% if tag == page.name %}
 				{% if first_blog %}
-					<div class="mdl-cell mdl-cell--10-col mdl-cell--1-offset mdl-card mdl-shadow--4dp">
+					<div class="mdl-cell mdl-cell--10-col mdl-cell--1-offset mdl-card mdl-shadow--4dp z0">
 					    <div class="mdl-card__title">
 					        <div class="card-title">Blog</div>
 					    </div>
@@ -128,3 +130,4 @@ layout: default
 	    </div>
 	</div>
 {% endif %}
+

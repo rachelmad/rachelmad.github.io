@@ -243,6 +243,8 @@ code {
     font-size: 4rem;
     padding-top: 2.5rem;
     z-index: 2;
+    display: flex;
+    justify-content: center;
 }
 
 .center-text {
@@ -315,6 +317,18 @@ code {
 
 .no-bottom-padding {
     padding-bottom: 0;
+}
+
+.negative-bottom-margin {
+    margin-bottom: -5px;
+}
+
+.z0 {
+    z-index: 0;
+}
+
+.z1 {
+    z-index: 1;
 }
 
 .padding-top {
