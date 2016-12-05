@@ -1,4 +1,4 @@
 ---
 layout: tagged
-name: jekyll
+name: Jekyll
 ---

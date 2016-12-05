@@ -1,4 +1,4 @@
 ---
 layout: tagged
-name: management
+name: Management
 ---

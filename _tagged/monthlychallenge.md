@@ -1,4 +1,4 @@
 ---
 layout: tagged
-name: Monthly Challenge
+name: Monthly challenge
 ---

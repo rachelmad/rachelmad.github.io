@@ -13,6 +13,10 @@
 		{% assign tagName="osipi" %}
 	{% when "Tech Blog Thursday" %}
 		{% assign tagName="tbt" %}
+	{% when "Microsoft Azure" %}
+		{% assign tagName="azure" %}
+	{% when "Monthly challenge" %}
+		{% assign tagName="monthlychallenge" %}
 	{% else %}
 		{% assign tagName=include.name %}
 {% endcase %}

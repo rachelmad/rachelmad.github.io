@@ -12,15 +12,7 @@ layout: default
         <div class="blog-details">
             {% for tag in page.tags %}
                 {% include chip.html name=tag %}
-<!--                 <a href="/tagged/{{ tag }}">
-                    <span class="mdl-chip">
-                        <span class="mdl-chip__text">{{ tag }}</span>
-                    </span>
-                </a> -->
-            {% endfor %}
-<!--             <div class="subtext flex1">
-                <span class="keywords"> {{ page.tools }} </span>
-            </div> -->
+            {% endfor %} 
         </div>
         <div class="portfolio-description">
 
