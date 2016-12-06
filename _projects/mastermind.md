@@ -1,7 +1,7 @@
 ---
 layout: large_card
 title: "Mastermind"
-company: "Independent"
+company: "Independent Project"
 display_date: "September 2016"
 tags: 
 - Ionic 2

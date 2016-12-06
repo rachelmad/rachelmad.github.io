@@ -1,7 +1,7 @@
 ---
 layout: large_card
 title: "Personal Website"
-company: "Independent"
+company: "Independent Project"
 display_date: "August 2016"
 tags: 
 - HTML
