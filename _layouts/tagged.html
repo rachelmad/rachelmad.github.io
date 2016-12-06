@@ -21,21 +21,8 @@ layout: default
 			    {% assign first_work_experience = false %}
 			{% endif %}
         
-	        <div class="mdl-cell mdl-cell--4-col">
-	            <div class="emphasize"> {{ post.company }}</div>
-	            <div class="subtext"> {{ post.display_date }}</div>
-	        </div>
-	        <div class="mdl-cell mdl-cell--8-col">
-	            <div class="emphasize"> {{ post.title }}</div>
-	            {% for tag in post.tags %}
-	                {% include chip.html name=tag %}
-	            {% endfor %}
-	            <div class="portfolio-description">
+	        {% include 2-column-post-display.html post-content=post %}
 
-	                {{ post.excerpt }}
-
-	            </div>
-	        </div>
         {% endif %}
     {% endfor %}
 {% endfor %}
@@ -84,7 +71,7 @@ layout: default
 
 {% assign first_blog = true %}
 {% assign has_blog = false %}
-{% for post in site.categories.blog %}
+{% for post in site.posts %}
 	{% if post.show == true %}
 		{% for tag in post.tags %}
 			{% if tag == page.name %}
