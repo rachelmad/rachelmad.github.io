@@ -3,7 +3,6 @@ layout: blog_post
 title: "How to fix mistakes in Git"
 tags: 
 - Git
-category: blog
 show: true
 ---
 

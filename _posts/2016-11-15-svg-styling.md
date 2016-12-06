@@ -5,7 +5,6 @@ tags:
 - SVG
 - JavaScript
 - CSS
-category: blog
 show: true
 ---
 

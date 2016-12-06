@@ -4,7 +4,6 @@ title: "Bachelor of Science Computer Science: Business Option"
 company: "University of Houston"
 display_date: "January 2012 - May 2015"
 note: "Cum Laude, GPA: 3.7"
-category: education
 ---
 
 Our curriculum was primarily based on C++, C#, and Java.

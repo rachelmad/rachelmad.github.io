@@ -5,7 +5,6 @@ tags:
 - Angular 2
 - Ionic 2
 - CSS
-category: blog
 show: true
 ---
 

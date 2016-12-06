@@ -3,7 +3,6 @@ layout: blog_post
 title: "How to run a meeting"
 tags: 
 - Management
-category: blog
 show: true
 ---
 

@@ -12,6 +12,15 @@ collections:
   tagged:
     output: true
     permalink: /tagged/:path/
+  education:
+    output: true
+    permalink: /education/:path/
+  projects:
+    output: true
+    permalink: /projects/:path/
+  work_experience:
+    output: true
+    permalink: /work_experience/:path/
 
 # Build settings
 markdown: kramdown

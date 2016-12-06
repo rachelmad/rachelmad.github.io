@@ -4,7 +4,6 @@ title: "Non-Primitive Inputs in Angular 2"
 tags: 
 - Angular 2
 - TypeScript
-category: blog
 show: true
 ---
 

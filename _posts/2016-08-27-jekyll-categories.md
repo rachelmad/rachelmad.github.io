@@ -5,7 +5,6 @@ tags:
 - Material Design Lite
 - Jekyll
 - Github Pages
-category: blog
 show: true
 ---
 

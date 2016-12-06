@@ -3,7 +3,6 @@ layout: blog_post
 title: "JavaScript Basics"
 tags: 
 - JavaScript
-category: blog
 show: true
 ---
 

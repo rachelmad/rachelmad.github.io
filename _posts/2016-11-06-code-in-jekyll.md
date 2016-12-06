@@ -6,7 +6,6 @@ tags:
 - Liquid
 - HTML
 - CSS
-category: blog
 show: true
 ---
 

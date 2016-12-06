@@ -3,7 +3,6 @@ layout: blog_post
 title: "Tech Blog Thursday: tom.preston-werner.com"
 tags: 
 - Tech Blog Thursday
-category: blog
 show: true
 ---
 

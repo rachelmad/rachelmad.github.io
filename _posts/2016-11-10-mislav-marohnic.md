@@ -3,7 +3,6 @@ layout: blog_post
 title: "Tech Blog Thursday: mislav.net"
 tags: 
 - Tech Blog Thursday
-category: blog
 show: true
 ---
 
