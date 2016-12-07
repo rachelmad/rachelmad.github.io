@@ -2,7 +2,8 @@
 layout: default
 ---
 
-{% for post in site.projects %}
+{% assign posts = site.projects | sort: 'order' | reverse %}
+{% for post in posts %}
 {% if post.show == true %}
 <div class="mdl-cell mdl-card mdl-shadow--4dp">
     <!--<div class="mdl-card__media">-->

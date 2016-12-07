@@ -12,6 +12,7 @@ tags:
 show: true
 link: https://github.com/rachelmad/rachelmad.github.io
 link_name: Github
+order: 6
 ---
 
 This personal website and blog was built on Jekyll and uses Material Design Lite. 

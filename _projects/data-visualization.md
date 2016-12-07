@@ -10,6 +10,7 @@ tags:
 - Bokeh
 - NumPy
 - Jupyter
+order: 5
 ---
 
 I helped create customizable data visualizations for data scientists at National Oilwell Varco, helping them

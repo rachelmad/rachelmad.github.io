@@ -8,6 +8,7 @@ tags:
 - ASP.NET
 - C#
 show: false
+order: 1
 ---
 
 This was a group project where we created an SQL database with a web based front end that stored the inventory,

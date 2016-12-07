@@ -30,12 +30,13 @@ layout: default
     </div>
 </div>
 
+{% assign posts = site.work_experience | sort: 'order' | reverse %}
 <div class="mdl-cell mdl-cell--10-col mdl-cell--1-offset mdl-card mdl-shadow--4dp">
     <div class="mdl-card__title">
         <div class="card-title">Work</div>
     </div>
     <div class="mdl-grid mdl-card__supporting-text">
-        {% for post in site.work_experience %}
+        {% for post in posts %}
 
             {% include 2-column-post-display.html post-content=post important=post.company sub=post.title %}
 
