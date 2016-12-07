@@ -3,7 +3,7 @@ layout: blog_post
 title: "30 Days of Blogging"
 tags: 
 - Monthly challenge
-show: false
+show: true
 ---
 
 On the first day of November, I challenged myself to 30 days of writing. 
