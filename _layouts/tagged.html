@@ -10,22 +10,19 @@ layout: default
 {% assign has_work_experience = false %}
 {% assign work_posts = site.work_experience | sort: 'order' | reverse %}
 {% for post in work_posts %}
-	{% for tag in post.tags %}
-		{% if tag == page.name %}
-			{% if first_work_experience %}
-				<div class="mdl-cell mdl-cell--10-col mdl-cell--1-offset mdl-card mdl-shadow--4dp z0">
-				    <div class="mdl-card__title">
-				        <div class="card-title">Work</div>
-				    </div>
-				    <div class="mdl-grid mdl-card__supporting-text">
-			    {% assign has_work_experience = true %}
-			    {% assign first_work_experience = false %}
-			{% endif %}
-        
-	        {% include 2-column-post-display.html post-content=post important=post.company sub=post.title %}
-
-        {% endif %}
-    {% endfor %}
+	{% if post.tags contains page.name %}
+		{% if first_work_experience %}
+			<div class="mdl-cell mdl-cell--10-col mdl-cell--1-offset mdl-card mdl-shadow--4dp z0">
+			    <div class="mdl-card__title">
+			        <div class="card-title">Work</div>
+			    </div>
+			    <div class="mdl-grid mdl-card__supporting-text">
+		    {% assign has_work_experience = true %}
+		    {% assign first_work_experience = false %}
+		{% endif %}
+    
+        {% include 2-column-post-display.html post-content=post important=post.company sub=post.title %}
+    {% endif %}
 {% endfor %}
 {% if has_work_experience %}
 	    </div>
@@ -36,22 +33,19 @@ layout: default
 {% assign has_projects = false %}
 {% assign project_posts = site.projects | sort: 'order' | reverse %}
 {% for post in project_posts %}
-	{% for tag in post.tags %}
-		{% if tag == page.name %}
-			{% if first_project %}
-				<div class="mdl-cell mdl-cell--10-col mdl-cell--1-offset mdl-card mdl-shadow--4dp z0">
-				    <div class="mdl-card__title">
-				        <div class="card-title">Projects</div>
-				    </div>
-				    <div class="mdl-grid mdl-card__supporting-text">
-				{% assign has_projects = true %}
-				{% assign first_project = false %}
-		    {% endif %}
+	{% if post.tags contains page.name %}
+		{% if first_project %}
+			<div class="mdl-cell mdl-cell--10-col mdl-cell--1-offset mdl-card mdl-shadow--4dp z0">
+			    <div class="mdl-card__title">
+			        <div class="card-title">Projects</div>
+			    </div>
+			    <div class="mdl-grid mdl-card__supporting-text">
+			{% assign has_projects = true %}
+			{% assign first_project = false %}
+	    {% endif %}
 
-		    {% include 2-column-post-display.html post-content=post important=post.title sub=post.company %}
-
-        {% endif %}
-    {% endfor %}
+	    {% include 2-column-post-display.html post-content=post important=post.title sub=post.company %}
+    {% endif %}
 {% endfor %}
 {% if has_projects %} 
 	    </div>
@@ -62,44 +56,42 @@ layout: default
 {% assign has_blog = false %}
 {% for post in site.posts %}
 	{% if post.show == true %}
-		{% for tag in post.tags %}
-			{% if tag == page.name %}
-				{% if first_blog %}
-					<div class="mdl-cell mdl-cell--10-col mdl-cell--1-offset mdl-card mdl-shadow--4dp z0">
-					    <div class="mdl-card__title">
-					        <div class="card-title">Blog</div>
-					    </div>
-					    <div class="mdl-grid mdl-card__supporting-text">
-				    {% assign has_blog = true %}
-				    {% assign first_blog = false %}
-			    {% endif %}
+		{% if post.tags contains page.name %}
+			{% if first_blog %}
+				<div class="mdl-cell mdl-cell--10-col mdl-cell--1-offset mdl-card mdl-shadow--4dp z0">
+				    <div class="mdl-card__title">
+				        <div class="card-title">Blog</div>
+				    </div>
+				    <div class="mdl-grid mdl-card__supporting-text">
+			    {% assign has_blog = true %}
+			    {% assign first_blog = false %}
+		    {% endif %}
 
-    			<div class="flex-column bottom-line">
-    				<div class="flex space-between">
-    					<div class="flex-column">
-    						<div class="emphasize">{{ post.title }}</div>
-    				<div class="subtext">{{ post.date | date: '%d %B %Y' }}</div>
-    					</div>
-			        <div class="blog-details">
-			            {% for tag in post.tags %}
-			                {% include chip.html name=tag %}
-			            {% endfor %}
-			        </div>
-    				</div>
+			<div class="flex-column bottom-line">
+				<div class="flex space-between">
+					<div class="flex-column">
+						<div class="emphasize">{{ post.title }}</div>
+				<div class="subtext">{{ post.date | date: '%d %B %Y' }}</div>
+					</div>
+		        <div class="blog-details">
+		            {% for tag in post.tags %}
+		                {% include chip.html name=tag %}
+		            {% endfor %}
+		        </div>
+				</div>
 
-			        <div class="portfolio-description">
+		        <div class="portfolio-description">
 
-			            {{ post.excerpt }}
+		            {{ post.excerpt }}
 
-			        </div>
-			        <div>
-			            <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent button-left" href={{ post.url }}>
-			                Read more
-			            </a>
-			        </div>
-    			</div>
-	        {% endif %}
-        {% endfor %}
+		        </div>
+		        <div>
+		            <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent button-left" href={{ post.url }}>
+		                Read more
+		            </a>
+		        </div>
+			</div>
+        {% endif %}
     {% endif %}
 {% endfor %}
 {% if has_blog %} 
