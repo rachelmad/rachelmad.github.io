@@ -30,9 +30,9 @@ layout: default
 
     {% if post.link %}
         <div class="mdl-card__actions mdl-card--border center-text">
-            <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href={{ post.link }}>
+            <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href={{ post.link }}>
                 {% if post.link_name == "Github" %}
-                    <i class="fa fa-github icon-button fa-2x" aria-hidden="true"></i>
+                    <i class="fa fa-github icon-button icon-margin" aria-hidden="true"></i>
                 {% else %}
                     {{ post.link_name }}
                 {% endif %}

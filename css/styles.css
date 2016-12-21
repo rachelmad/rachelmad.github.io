@@ -135,6 +135,10 @@ footer {
     margin-bottom: 7px;
 }
 
+.icon-margin {
+    margin-top: 3px;
+}
+
 /*--------------- Text ---------------*/
 a {
     text-decoration: none;
@@ -265,6 +269,10 @@ code {
 
 .margin-side {
     margin: 0 5px;
+}
+
+.margin-side-large {
+    margin: 0 24px;
 }
 
 /*--------------- Unused (but may be useful in the future) ---------------*/
