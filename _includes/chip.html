@@ -17,6 +17,8 @@
 		{% assign tagName="azure" %}
 	{% when "Monthly challenge" %}
 		{% assign tagName="monthlychallenge" %}
+	{% when "C#" %}
+		{% assign tagName="csharp" %}
 	{% else %}
 		{% assign tagName=include.name %}
 {% endcase %}
