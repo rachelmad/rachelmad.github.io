@@ -10,7 +10,7 @@ tags:
 - HTML
 - SCSS
 show: true
-link: hhttps://github.com/rachelmad/mastermind
+link: https://github.com/rachelmad/mastermind
 link_name: Github
 order: 7
 ---

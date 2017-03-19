@@ -9,6 +9,7 @@ body, h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
     font-family: 'Stalemate', cursive;
     line-height: 35px;
+    font-color: #000000;
 }
 
 .portfolio-max-width {
@@ -195,6 +196,10 @@ code {
 
 .color-pink {
     color: #FAD1D6;
+}
+
+.color-black {
+    color: #000000;
 }
 
 /*--------------- Blog ---------------*/
