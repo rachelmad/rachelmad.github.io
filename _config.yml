@@ -26,3 +26,4 @@ collections:
 markdown: kramdown
 permalink: /entries/:year/:month/:day/:title
 highlighter: rouge
+gems: ["jemoji"]

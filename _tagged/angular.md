@@ -1,4 +1,4 @@
 ---
 layout: tagged
-name: Angular 2
+name: Angular
 ---

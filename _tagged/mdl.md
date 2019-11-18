@@ -1,4 +1,4 @@
 ---
 layout: tagged
-name: Material Design Lite
+name: Material Design
 ---

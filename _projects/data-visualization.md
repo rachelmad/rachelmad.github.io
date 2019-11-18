@@ -3,8 +3,8 @@ layout: large_card
 title: "Data Visualization Tools"
 company: "National Oilwell Varco"
 display_date: "October 2015"
-show: false
-tags: 
+show: true
+tags:
 - Python
 - Pandas
 - Bokeh

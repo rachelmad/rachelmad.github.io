@@ -3,9 +3,9 @@ layout: large_card
 title: "Fanfiction Checker"
 company: "Independent Project"
 display_date: "May 2015 - June 2015"
-tags: 
+tags:
 - Python
-show: true
+show: false
 link: https://github.com/rachelmad/Fanfiction-Checker
 link_name: Github
 order: 4
